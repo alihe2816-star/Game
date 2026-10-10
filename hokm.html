@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>حکم چهار نفره</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--felt:#0e4a35;--gold:#f2c14e}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:#06241a;color:#eef;font-family:Vazirmatn,Tahoma,sans-serif;min-height:100vh}
+#app{max-width:760px;margin:auto;padding:8px;display:flex;flex-direction:column;gap:8px}
+header{display:flex;justify-content:space-between;align-items:center;gap:6px;background:#0a2f22;padding:8px 10px;border-radius:12px;font-size:14px;flex-wrap:wrap}
+select,button{font-family:inherit;font-size:14px;border-radius:8px;border:1px solid #3a7;background:#14513b;color:#fff;padding:5px 10px}
+button{cursor:pointer}
+#table{direction:ltr;display:grid;grid-template-columns:78px 1fr 78px;grid-template-rows:auto 1fr;gap:6px;background:radial-gradient(ellipse at center,#14694b,var(--felt));border:4px solid #3b2a14;border-radius:22px;padding:10px;min-height:340px}
+.seat{direction:rtl;text-align:center;font-size:13px;padding:6px 4px;border-radius:10px;background:#0006;align-self:center;justify-self:center;min-width:70px;border:2px solid transparent}
+.seat.act,#me.act{border-color:var(--gold);box-shadow:0 0 12px var(--gold)}
+#p2{grid-column:1/4}#p3{grid-column:1;grid-row:2}#center{grid-column:2;grid-row:2}#p1{grid-column:3;grid-row:2}
+.back{display:inline-block;width:14px;height:20px;border-radius:3px;background:repeating-linear-gradient(45deg,#7a1f2b,#7a1f2b 3px,#a8323f 3px,#a8323f 6px);border:1px solid #fff;vertical-align:middle}
+#center{position:relative;min-height:230px;--w:46px}
+.card{position:relative;width:var(--w);height:calc(var(--w)*1.42);background:linear-gradient(160deg,#fff,#ece7d8);color:#16161d;border-radius:calc(var(--w)*.14);box-shadow:0 3px 8px #000a,inset 0 0 0 1px #0002;user-select:none;direction:ltr;transition:transform .15s;font-weight:700}
+.card b{position:absolute;top:5%;left:10%;font-size:calc(var(--w)*.34);line-height:1}
+.card u{position:absolute;top:calc(var(--w)*.4);left:10%;text-decoration:none;font-size:calc(var(--w)*.26);line-height:1}
+.card i{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-style:normal;font-size:calc(var(--w)*.7);padding-top:calc(var(--w)*.28)}
+.card.r{color:#c8102e}
+.card.t{box-shadow:0 3px 8px #000a,inset 0 0 0 2px var(--gold)}
+.pop{animation:pop .35s ease-out}
+@keyframes pop{from{opacity:0;scale:.5}to{opacity:1;scale:1}}
+.tc{position:absolute}
+.tc0{bottom:6px;left:50%;transform:translateX(-50%)}.tc2{top:6px;left:50%;transform:translateX(-50%)}
+.tc1{right:6px;top:50%;transform:translateY(-50%)}.tc3{left:6px;top:50%;transform:translateY(-50%)}
+#me{text-align:center;font-size:13px;padding:4px;border-radius:10px;border:2px solid transparent}
+#hand{--w:min(64px,12vw);direction:ltr;display:flex;justify-content:center;padding:6px 0 12px;min-height:calc(min(64px,12vw)*1.4 + 20px)}
+#hand .card{margin-left:calc(var(--w)*-.5);cursor:default}
+#hand .card:first-child{margin-left:0}
+#hand .card.ok{cursor:pointer}#hand .card.ok:hover{transform:translateY(-12px)}
+#hand .card.no{filter:brightness(.55)}
+#hand .card.hint{transform:translateY(-14px);outline:3px solid var(--gold)}
+#msg{text-align:center;min-height:34px;font-size:15px}
+#msg button{margin:2px;font-size:16px}
+.r{color:#ff6b7a}
+#ov{position:fixed;inset:0;background:#000b;display:none;align-items:center;justify-content:center;z-index:9}
+.bx{background:#0a2f22;border:2px solid var(--gold);border-radius:16px;padding:22px;text-align:center;max-width:90%}
+.bx h2{margin:0 0 8px;color:var(--gold)}
+body{background:radial-gradient(ellipse at top,#0d3b2c,#04140e 70%)}
+header{background:linear-gradient(#123d2e,#0a2a1f);border:1px solid #2b6b52;box-shadow:0 4px 14px #0007}
+#tb{text-align:center;padding:8px 12px;border-radius:14px;font-size:17px;background:linear-gradient(#2a1d0c,#150e05);border:2px solid var(--gold);box-shadow:0 0 18px #f2c14e55}
+#tb .ts{display:inline-block;font-size:34px;margin:0 8px;background:#fff;color:#111;border-radius:10px;padding:0 12px;line-height:1.3;box-shadow:0 0 12px #f2c14e}
+#tb .ts.r{color:#c8102e}
+#table{border:7px solid #4a3118;box-shadow:inset 0 0 60px #000a,0 10px 30px #000a,0 0 0 2px #8a6a3a;background:radial-gradient(ellipse at center,#1a8a5f 0%,#0f5a3f 60%,#08382a 100%)}
+.seat{background:#0a1a14aa;border:2px solid #fff2}
+button{background:linear-gradient(#f6d37a,#c8962e);color:#2a1a05;border:0;font-weight:700;box-shadow:0 2px 6px #0006}
+.card{transition:transform .15s,translate .15s}
+.card::after{content:attr(data-k);position:absolute;bottom:5%;right:10%;rotate:180deg;font-size:calc(var(--w)*.34);line-height:1}
+.fc::before{content:'';position:absolute;inset:18% 20%;border:1.5px solid currentColor;border-radius:5px;opacity:.3}
+.ace i{font-size:calc(var(--w)*.95)}
+#hand{padding-top:26px}
+#hand .card{rotate:var(--r,0deg);translate:0 var(--y,0px);transform-origin:50% 130%}
+#hand .card.ok:hover,#hand .card.hint{transform:none;translate:0 calc(var(--y,0px) - 18px)}
+.tc{rotate:var(--rot,0deg)}
+.tc0{--fy:150px}.tc2{--fy:-150px}.tc1{--fx:150px}.tc3{--fx:-150px}
+.pop{animation:fly .4s cubic-bezier(.2,.9,.3,1.15)}
+@keyframes fly{from{translate:var(--fx,0) var(--fy,0);scale:.6;opacity:.3}to{translate:0 0;scale:1;opacity:1}}
+.win{box-shadow:0 0 0 3px var(--gold),0 0 24px var(--gold);scale:1.12;z-index:3}
+#center::before{content:var(--ts,'');position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:160px;opacity:.13;color:#fff;pointer-events:none}
+#center.r::before{color:#ff8a98}
+#table{background:repeating-linear-gradient(0deg,#ffffff07 0 2px,transparent 2px 4px),radial-gradient(ellipse at center,#1d9467 0%,#0f5a3f 60%,#072f23 100%)}
+.fan{direction:ltr;display:flex;justify-content:center;margin:3px 0;min-height:23px}
+.fan .back+.back{margin-left:-10px}
+.back{width:16px;height:23px;border-radius:3px;border:1px solid var(--gold);background:repeating-linear-gradient(45deg,#5b1220 0 3px,#8f2236 3px 6px);box-shadow:-1px 0 3px #0008}
+.seat small{opacity:.7}
+.seat.act{animation:pulse 1.3s infinite}
+@keyframes pulse{50%{box-shadow:0 0 24px var(--gold)}}
+#tb .ts{animation:gl 2s infinite}
+@keyframes gl{50%{box-shadow:0 0 26px #f2c14e}}
+.av{width:40px;height:40px;margin:0 auto 3px;border-radius:50%;background:linear-gradient(#f6e3b0,#b98d3c);display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 2px 6px #0008}
+</style>
+</head>
+<body>
+<div id="app">
+<header>
+ <div id="sc"></div>
+ <div id="info"></div>
+ <span><button id="hb">💡 پیشنهاد</button> <button id="sb">🔊</button> <select id="lvl"><option value="40">خوب</option><option value="150" selected>حرفه‌ای</option><option value="400">استاد</option></select></span>
+</header>
+<div id="tb"></div>
+<div id="table">
+ <div class="seat" id="p2"></div><div class="seat" id="p3"></div>
+ <div id="center"></div><div class="seat" id="p1"></div>
+</div>
+<div id="msg"></div>
+<div id="me">شما</div>
+<div id="hand"></div>
+</div>
+<div id="ov"></div>
+<script>
+const $=id=>document.getElementById(id),S='♠♥♦♣',SN=['پیک','دل','خشت','گشنیز'],RN={11:'J',12:'Q',13:'K',14:'A'};
+const rn=r=>RN[r]||r,red=s=>s==1||s==2,fa=n=>String(n).replace(/\d/g,d=>'۰۱۲۳۴۵۶۷۸۹'[d]);
+const NM=['شما','آرش','نیلوفر','بهرام'];
+const sh=a=>{for(let i=a.length;i>1;){const j=Math.random()*i|0;i--;[a[i],a[j]]=[a[j],a[i]]}return a};
+const ALL=[];for(let s=0;s<4;s++)for(let r=2;r<15;r++)ALL.push({s,r,id:s*20+r});
+let G={score:[0,0],hakem:Math.random()*4|0,turn:0,tr:-1,hands:[[],[],[],[]],trick:[],tk:[0,0],seen:new Set(),void:[{},{},{},{}]};
+const legal=(h,led)=>{if(led<0)return h;const f=h.filter(c=>c.s==led);return f.length?f:h};
+function trickWin(t,tr){let b=t[0];for(const x of t.slice(1)){if(x.c.s==b.c.s){if(x.c.r>b.c.r)b=x}else if(x.c.s==tr)b=x}return b.p}
+const lo=a=>a.reduce((m,c)=>c.r<m.r?c:m),hi=a=>a.reduce((m,c)=>c.r>m.r?c:m);
+// heuristic policy used inside rollouts
+function pick(h,t,tr,p){
+ const led=t.length?t[0].c.s:-1,L=legal(h,led);
+ if(L.length==1)return L[0];
+ if(led<0){
+  const nt=h.filter(c=>c.s!=tr),ac=nt.find(c=>c.r==14);
+  if(ac)return ac;
+  const T=h.filter(c=>c.s==tr);
+  if(T.length>=4)return hi(T);
+  return nt.length?lo(nt):lo(h);
+ }
+ const w=trickWin(t,tr),wc=t.find(x=>x.p==w).c,last=t.length==3;
+ const low=()=>{const nt=L.filter(c=>c.s!=tr);return lo(nt.length?nt:L)};
+ if(w==(p+2)%4&&(last||wc.r>=12||wc.s==tr))return low();
+ const W=L.filter(c=>c.s==wc.s?c.r>wc.r:c.s==tr);
+ return W.length?lo(W):low();
+}
+function roll(hs,t,turn,tr){
+ const w=[0,0];
+ for(;;){
+  while(t.length<4){const h=hs[turn],c=pick(h,t,tr,turn);h.splice(h.indexOf(c),1);t.push({p:turn,c});turn=(turn+1)%4}
+  const wp=trickWin(t,tr);w[wp%2]++;t=[];turn=wp;
+  if(!hs[turn].length)return w;
+ }
+}
+// sample hidden hands consistent with known voids; hakem is biased toward holding trump
+function deal(un,n,p){
+ const alw=c=>[0,1,2,3].filter(q=>q!=p&&!G.void[q][c.s]).length;
+ for(let k=0;k<30;k++){
+  const u=sh(un.slice()).sort((a,b)=>alw(a)-alw(b)),hs=[[],[],[],[]],nd=n.slice();let ok=1;
+  for(const c of u){
+   const cd=[0,1,2,3].filter(q=>q!=p&&nd[q]>0&&!G.void[q][c.s]);
+   if(!cd.length){ok=0;break}
+   const wt=cd.map(q=>nd[q]*(q==G.hakem&&c.s==G.tr?2:1));
+   let r=Math.random()*wt.reduce((a,b)=>a+b),i=0;
+   while(i<cd.length-1&&(r-=wt[i])>0)i++;
+   hs[cd[i]].push(c);nd[cd[i]]--;
+  }
+  if(ok)return hs;
+ }
+ const u=sh(un.slice()),hs=[[],[],[],[]];
+ for(let q=0;q<4;q++)if(q!=p)hs[q]=u.splice(0,n[q]);
+ return hs;
+}
+function aiMove(p){
+ const h=G.hands[p],t=G.trick,led=t.length?t[0].c.s:-1,L=legal(h,led);
+ if(L.length==1)return L[0];
+ const un=ALL.filter(c=>!G.seen.has(c.id)&&!h.includes(c));
+ const n=G.hands.map(a=>a.length),N=+$('lvl').value,sc=L.map(()=>0),me=p%2;
+ for(let k=0;k<N;k++){
+  const hs=deal(un,n,p);hs[p]=h;
+  L.forEach((m,i)=>{
+   const hh=hs.map(a=>a.slice());hh[p].splice(hh[p].indexOf(m),1);
+   const w=roll(hh,[...t,{p,c:m}],(p+1)%4,G.tr);
+   sc[i]+=(G.tk[me]+w[me]>=7?10:0)+w[me];
+  });
+ }
+ return L[sc.indexOf(Math.max(...sc))];
+}
+function aiTrump(h){
+ const v=[0,0,0,0];
+ h.forEach(c=>v[c.s]+=4+(c.r==14?5:c.r==13?3:c.r==12?2:c.r==11?1:.3));
+ return v.indexOf(Math.max(...v));
+}
+// ---------- UI / flow ----------
+const cardEl=(c,x='',a='')=>`<div class="card ${red(c.s)?'r':''} ${c.r>10&&c.r<14?'fc':''} ${c.r==14?'ace':''} ${x}" data-k="${rn(c.r)}" ${a}><b>${rn(c.r)}</b><u>${S[c.s]}</u><i>${S[c.s]}</i></div>`;
+const msg=h=>$('msg').innerHTML=h;
+function render(){
+ const h=G.hands[0],ok=G.turn==0&&G.tr>=0&&G.trick.length<4&&!G.over;
+ const L=ok?legal(h,G.trick.length?G.trick[0].c.s:-1):[];
+ $('hand').innerHTML=h.map((c,i)=>cardEl(c,(ok?(L.includes(c)?'ok':'no'):'')+(G.hint==c?' hint':'')+(c.s==G.tr?' t':''),`data-i="${i}" style="--r:${((i-(h.length-1)/2)*2.4).toFixed(1)}deg;--y:${(Math.pow(i-(h.length-1)/2,2)*.55).toFixed(1)}px"`)).join('');
+ for(let q=1;q<4;q++){
+  $('p'+q).innerHTML=`<div class="av">${['','🧔','👩','👨‍🦳'][q]}</div><div>${G.hakem==q?'👑 ':''}${NM[q]}${q==2?' (هم‌تیمی)':''}</div><div class="fan">${'<span class="back"></span>'.repeat(G.hands[q].length)}</div><small>${fa(G.hands[q].length)} کارت</small>`;
+  $('p'+q).classList.toggle('act',G.turn==q&&!G.over&&G.tr>=0);
+ }
+ $('me').textContent=(G.hakem==0?'👑 ':'')+'شما';
+ $('me').classList.toggle('act',G.turn==0&&ok);
+ $('center').innerHTML=($('center').style.setProperty('--ts',G.tr>=0?"'"+S[G.tr]+"'":"''"),$('center').className=G.tr>=0&&red(G.tr)?'r':'',G.trick.map((x,i)=>cardEl(x.c,'tc tc'+x.p+(i==G.trick.length-1?' pop':'')+(G.trick.length==4&&x.p==trickWin(G.trick,G.tr)?' win':''),`style="--rot:${x.c.id*7%11-5}deg"`)).join(''));
+ $('sc').innerHTML=`امتیاز: ما <b>${fa(G.score[0])}</b> : <b>${fa(G.score[1])}</b> آنها`;
+ $('info').innerHTML=`دست‌ها: ${fa(G.tk[0])} - ${fa(G.tk[1])}`;
+ $('tb').innerHTML=G.tr>=0?`حکم این دست <span class="ts ${red(G.tr)?'r':''}">${S[G.tr]}</span> ${SN[G.tr]} · حاکم: ${NM[G.hakem]}`:`${NM[G.hakem]} حاکم است؛ در انتظار انتخاب حکم…`;
+}
+function startHand(){
+ const d=sh(ALL.slice()),hk=G.hakem;
+ G.hands=[[],[],[],[]];G.hands[hk]=d.splice(0,5);G.deck=d;
+ G.tr=-1;G.tk=[0,0];G.trick=[];G.seen=new Set();G.void=[{},{},{},{}];G.over=0;G.hint=null;G.turn=hk;G.note='';
+ G.hands[hk].sort((a,b)=>a.s-b.s||b.r-a.r);G.weak=G.hands[hk].every(c=>c.r<=10);
+ render();
+ if(hk==0)msg('شما حاکم هستید؛ حکم را انتخاب کنید:<br>'+SN.map((n,s)=>`<button onclick="setTrump(${s})"><span class="${red(s)?'r':''}">${S[s]}</span> ${n}</button>`).join('')+(G.weak?'<br><button onclick="startHand()">🔁 دست ضعیف (ده‌لو‌کم)؛ بُر مجدد</button>':''));
+ else{msg(`${NM[hk]} حاکم است و حکم را انتخاب می‌کند…`);G.weak?(msg(`${NM[hk]} دستش ده‌لو‌کم بود؛ بُر مجدد`),setTimeout(startHand,1600)):setTimeout(()=>setTrump(aiTrump(G.hands[hk])),1200)}
+}
+function setTrump(s){
+ if(G.tr>=0)return;
+ G.tr=s;const hk=G.hakem,d=G.deck;
+ G.hands[hk].push(...d.splice(0,8));
+ for(let q=0;q<4;q++)if(q!=hk)G.hands[q]=d.splice(0,13);
+ G.hands.forEach(h=>h.sort((a,b)=>((b.s==s)-(a.s==s))||a.s-b.s||b.r-a.r));
+ G.note=`حکم: ${SN[s]}.`;G.turn=hk;turn();
+}
+function turn(){
+ render();
+ if(G.trick.length==4){setTimeout(endTrick,1000);return}
+ const p=G.turn;
+ if(p==0)msg(`${G.note} نوبت شماست`);
+ else{msg(`${G.note} ${NM[p]} در حال فکر…`);setTimeout(()=>play(p,aiMove(p)),650)}
+}
+function play(p,c){
+ const h=G.hands[p],led=G.trick.length?G.trick[0].c.s:-1;
+ h.splice(h.indexOf(c),1);
+ if(led>=0&&c.s!=led)G.void[p][led]=1;
+ G.trick.push({p,c});G.seen.add(c.id);snd();G.hint=null;G.turn=(p+1)%4;turn();
+}
+function endTrick(){
+ const w=trickWin(G.trick,G.tr);
+ G.tk[w%2]++;G.trick=[];G.turn=w;G.note=`${NM[w]} دست را برد.`;
+ if(G.tk[0]>=7||G.tk[1]>=7)return endHand();
+ turn();
+}
+function endHand(){
+ render();G.over=1;
+ const wt=G.tk[0]>=7?0:1,lt=1-wt,hk=G.hakem%2;
+ let pts=1,tag='';
+ if(G.tk[lt]==0){if(wt==hk){pts=2;tag='کوت! '}else{pts=3;tag='حاکم‌کوت! '}}
+ G.score[wt]+=pts;
+ if(wt!=hk)G.hakem=(G.hakem+1)%4;
+ const fin=G.score[wt]>=7;
+ $('ov').innerHTML=`<div class="bx"><h2>${tag}${wt==0?'تیم شما':'تیم حریف'} ${fin?'برنده بازی شد 🏆':'این دست را برد'}</h2><p>${fa(pts)} امتیاز · دست‌ها ${fa(G.tk[0])} به ${fa(G.tk[1])}</p><p>امتیاز کل: ما ${fa(G.score[0])} — آنها ${fa(G.score[1])}</p><button id="nx">${fin?'بازی جدید':'دست بعد'}</button></div>`;
+ $('ov').style.display='flex';
+ $('nx').onclick=()=>{$('ov').style.display='none';if(fin){G.score=[0,0];G.hakem=Math.random()*4|0}startHand()};
+}
+$('hand').onclick=e=>{
+ const el=e.target.closest('.card.ok');
+ if(el&&G.turn==0)play(0,G.hands[0][+el.dataset.i]);
+};
+$('hb').onclick=()=>{
+ if(G.turn!=0||G.tr<0||G.trick.length>=4||G.over)return;
+ G.hint=aiMove(0);render();
+};
+// ---------- stronger AI (supersedes the earlier pick/roll/aiMove/aiTrump) ----------
+// hl: does an unseen card higher than c exist in c's suit?
+const hl=(c,h,g)=>{for(let k=c.r+1;k<15;k++){const id=c.s*20+k;if(!g.has(id)&&!h.some(x=>x.id==id))return 1}return 0};
+function pick(h,t,tr,p,g){
+ const led=t.length?t[0].c.s:-1,L=legal(h,led);
+ if(L.length==1)return L[0];
+ if(led<0){
+  const nt=h.filter(c=>c.s!=tr),T=h.filter(c=>c.s==tr);
+  const ms=nt.filter(c=>!hl(c,h,g));
+  if(ms.length)return hi(ms);
+  if(!nt.length||T.length>=5||(T.length>=3&&T.some(c=>!hl(c,h,g))))return hi(T);
+  if(T.length>=2){const sg=nt.filter(c=>nt.filter(d=>d.s==c.s).length==1);if(sg.length)return lo(sg)}
+  const cnt=c=>nt.filter(d=>d.s==c.s).length,mx=Math.max(...nt.map(cnt));
+  return lo(nt.filter(c=>cnt(c)==mx));
+ }
+ const w=trickWin(t,tr),wc=t.find(x=>x.p==w).c,last=t.length==3;
+ const low=()=>{const nt=L.filter(c=>c.s!=tr);return lo(nt.length?nt:L)};
+ if(w==(p+2)%4&&(last||!hl(wc,h,g)))return low();
+ const W=L.filter(c=>c.s==wc.s?c.r>wc.r:c.s==tr);
+ if(W.length){
+  if(last)return lo(W);
+  const m=W.filter(c=>!hl(c,h,g));
+  if(m.length)return lo(m);
+  if(t.length==2)return lo(W);
+ }
+ return low();
+}
+function roll(hs,t,turn,tr,g){
+ const w=[0,0];g=new Set(g);t.forEach(x=>g.add(x.c.id));
+ for(;;){
+  while(t.length<4){const h=hs[turn],c=pick(h,t,tr,turn,g);h.splice(h.indexOf(c),1);t.push({p:turn,c});g.add(c.id);turn=(turn+1)%4}
+  const wp=trickWin(t,tr);w[wp%2]++;t=[];turn=wp;
+  if(!hs[turn].length)return w;
+ }
+}
+function aiMove(p){
+ const h=G.hands[p],t=G.trick,led=t.length?t[0].c.s:-1,L=legal(h,led);
+ if(L.length==1)return L[0];
+ const un=ALL.filter(c=>!G.seen.has(c.id)&&!h.includes(c)),n=G.hands.map(a=>a.length);
+ const N=Math.round(+$('lvl').value*(1+(13-h.length)*.15)),me=p%2;
+ const sc=L.map(m=>-m.r*.02-(m.s==G.tr?.5:0));
+ for(let k=0;k<N;k++){
+  const hs=deal(un,n,p);hs[p]=h;
+  L.forEach((m,i)=>{
+   const hh=hs.map(a=>a.slice());hh[p].splice(hh[p].indexOf(m),1);
+   const w=roll(hh,[...t,{p,c:m}],(p+1)%4,G.tr,G.seen);
+   sc[i]+=(G.tk[me]+w[me]>=7?10:0)+w[me];
+  });
+ }
+ return L[sc.indexOf(Math.max(...sc))];
+}
+// trump choice: simulate 80 random completions of the hand for each suit
+function aiTrump(h){
+ const hk=G.hakem,un=ALL.filter(c=>!h.includes(c)),sc=[0,0,0,0];
+ for(let s=0;s<4;s++)for(let k=0;k<160;k++){
+  const u=sh(un.slice()),hs=[[],[],[],[]];
+  for(let q=0;q<4;q++)hs[q]=q==hk?h.concat(u.splice(0,8)):u.splice(0,13);
+  const w=roll(hs,[],hk,s,new Set());
+  sc[s]+=w[hk%2]>=7?10:w[hk%2];
+ }
+ return sc.indexOf(Math.max(...sc));
+}
+let mute=0,AC;
+function snd(){if(mute)return;try{AC=AC||new(window.AudioContext||window.webkitAudioContext)();AC.resume();const n=AC.sampleRate*.07|0,b=AC.createBuffer(1,n,AC.sampleRate),d=b.getChannelData(0);for(let i=0;i<n;i++)d[i]=(Math.random()*2-1)*Math.pow(1-i/n,3);const s=AC.createBufferSource(),f=AC.createBiquadFilter();f.type='bandpass';f.frequency.value=1800;s.buffer=b;s.connect(f);f.connect(AC.destination);s.start()}catch(e){}}
+$('sb').onclick=()=>{mute=!mute;$('sb').textContent=mute?'🔇':'🔊'};
+startHand();
+</script>
+</body>
+</html>
